@@ -5,7 +5,7 @@ fp = '1/input.txt'
 dat = open(fp).read().strip().split('\n')
 dat = [int(x) for x in dat]
 
-cmb = list(combinations(dat, 3)) # get all combinations of pairwise combos
+cmb = list(combinations(dat, 3)) # get all combinations of triplet combos
 
 def is_valid(x):
     return sum(x) == 2020 # Check for validity 
